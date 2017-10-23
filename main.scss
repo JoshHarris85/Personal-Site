@@ -1,0 +1,111 @@
+@import "compass/css3";
+html,
+body {
+  overflow: hidden;
+  font-family: 'Lora', serif;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient( #1e528e 0%, #728a7c 50%, #e9ce5d 100%);
+  text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+#mainParticles {
+  width: 100%;
+  height: 100%;
+}
+
+.font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 a {
+  display: inline;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 450;
+  font-size: 3.5vw;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 5vw;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: -40px;
+}
+
+.menu li a {
+  color: rgba(255, 255, 255, 0.71);
+  text-decoration: none;
+  opacity: 1
+}
+
+.menu li a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+h1 a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.content {
+  left: 20%;
+  top: 25%;
+  width: 80%;
+  position: absolute;
+}
+
+$r: 10em;
+$n: 13;
+$cover: 100% 100%, 0 100%, 0 0, 100% 0;
+
+@function poly($k: 0) {
+	$p: ();
+	@for $i from 0 to 2*$n {
+		$a: $i*180deg/$n;
+		$j: if($k == 0, $i%2, $k);
+		$x: calc(50% + #{$j*$r*cos($a)});
+		$y: calc(50% + #{$j*$r*sin($a)});
+		$p: $p, $x $y;
+	}
+	@return polygon($p);
+}
+
+@function cover() {
+	$p: ();
+	@for $i from 0 to 2*$n {
+		$p: $p, nth($cover, floor($i/($n/2)) + 1)
+	}
+	@return polygon($p)
+}
+
+html { background: #222; }
+
+body {
+	margin: 0;
+	height: 100vh;
+	background-size: cover;
+	animation: ani 2s linear;
+}
+
+@keyframes ani {
+	0%, 5% {
+		opacity: .999;
+		-webkit-clip-path: poly();
+        clip-path: poly();
+	}
+	40% { -webkit-clip-path: poly(1);
+          clip-path: poly(1);}
+	80% {
+		opacity: .999;
+		-webkit-clip-path: cover();
+        clip-path: cover();
+	}
+	100% {
+		opacity: 1;
+		-webkit-clip-path: cover();
+       clip-path: cover();
+	}
+}

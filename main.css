@@ -1,0 +1,101 @@
+/* line 2, ../compass/sass/main.scss */
+html,
+body {
+  overflow: hidden;
+  font-family: 'Lora', serif;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#1e528e 0%, #728a7c 50%, #e9ce5d 100%);
+  text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* line 12, ../compass/sass/main.scss */
+#mainParticles {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 17, ../compass/sass/main.scss */
+.font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 22, ../compass/sass/main.scss */
+h1 a {
+  display: inline;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 450;
+  font-size: 3.5vw;
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* line 31, ../compass/sass/main.scss */
+.menu li {
+  display: inline;
+  margin-right: 5vw;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: -40px;
+}
+
+/* line 39, ../compass/sass/main.scss */
+.menu li a {
+  color: rgba(255, 255, 255, 0.71);
+  text-decoration: none;
+  opacity: 1;
+}
+
+/* line 45, ../compass/sass/main.scss */
+.menu li a:hover {
+  color: white;
+}
+
+/* line 49, ../compass/sass/main.scss */
+h1 a:hover {
+  color: white;
+}
+
+/* line 53, ../compass/sass/main.scss */
+.content {
+  left: 20%;
+  top: 25%;
+  width: 80%;
+  position: absolute;
+}
+
+/* line 84, ../compass/sass/main.scss */
+html {
+  background: #222;
+}
+
+/* line 86, ../compass/sass/main.scss */
+body {
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+  animation: ani 2s linear;
+}
+
+@keyframes ani {
+  0%, 5% {
+    opacity: .999;
+    -webkit-clip-path: polygon(calc(50% + 0em) calc(50% + 0em), calc(50% + 9.70942em) calc(50% + 2.39316em), calc(50% + 0em) calc(50% + 0em), calc(50% + 7.48511em) calc(50% + 6.63123em), calc(50% + 0em) calc(50% + 0em), calc(50% + 3.54605em) calc(50% + 9.35016em), calc(50% + 0em) calc(50% + 0em), calc(50% + -1.20537em) calc(50% + 9.92709em), calc(50% + 0em) calc(50% + 0em), calc(50% + -5.68065em) calc(50% + 8.22984em), calc(50% + 0em) calc(50% + 0em), calc(50% + -8.85456em) calc(50% + 4.64723em), calc(50% + 0em) calc(50% + 0em), calc(50% + -10em) calc(50% + 0.0em), calc(50% + 0em) calc(50% + 0em), calc(50% + -8.85456em) calc(50% + -4.64723em), calc(50% + 0em) calc(50% + 0em), calc(50% + -5.68065em) calc(50% + -8.22984em), calc(50% + 0em) calc(50% + 0em), calc(50% + -1.20537em) calc(50% + -9.92709em), calc(50% + 0em) calc(50% + 0em), calc(50% + 3.54605em) calc(50% + -9.35016em), calc(50% + 0em) calc(50% + 0em), calc(50% + 7.48511em) calc(50% + -6.63123em), calc(50% + 0em) calc(50% + 0em), calc(50% + 9.70942em) calc(50% + -2.39316em));
+    clip-path: polygon(calc(50% + 0em) calc(50% + 0em), calc(50% + 9.70942em) calc(50% + 2.39316em), calc(50% + 0em) calc(50% + 0em), calc(50% + 7.48511em) calc(50% + 6.63123em), calc(50% + 0em) calc(50% + 0em), calc(50% + 3.54605em) calc(50% + 9.35016em), calc(50% + 0em) calc(50% + 0em), calc(50% + -1.20537em) calc(50% + 9.92709em), calc(50% + 0em) calc(50% + 0em), calc(50% + -5.68065em) calc(50% + 8.22984em), calc(50% + 0em) calc(50% + 0em), calc(50% + -8.85456em) calc(50% + 4.64723em), calc(50% + 0em) calc(50% + 0em), calc(50% + -10em) calc(50% + 0.0em), calc(50% + 0em) calc(50% + 0em), calc(50% + -8.85456em) calc(50% + -4.64723em), calc(50% + 0em) calc(50% + 0em), calc(50% + -5.68065em) calc(50% + -8.22984em), calc(50% + 0em) calc(50% + 0em), calc(50% + -1.20537em) calc(50% + -9.92709em), calc(50% + 0em) calc(50% + 0em), calc(50% + 3.54605em) calc(50% + -9.35016em), calc(50% + 0em) calc(50% + 0em), calc(50% + 7.48511em) calc(50% + -6.63123em), calc(50% + 0em) calc(50% + 0em), calc(50% + 9.70942em) calc(50% + -2.39316em));
+  }
+  40% {
+    -webkit-clip-path: polygon(calc(50% + 10em) calc(50% + 0em), calc(50% + 9.70942em) calc(50% + 2.39316em), calc(50% + 8.85456em) calc(50% + 4.64723em), calc(50% + 7.48511em) calc(50% + 6.63123em), calc(50% + 5.68065em) calc(50% + 8.22984em), calc(50% + 3.54605em) calc(50% + 9.35016em), calc(50% + 1.20537em) calc(50% + 9.92709em), calc(50% + -1.20537em) calc(50% + 9.92709em), calc(50% + -3.54605em) calc(50% + 9.35016em), calc(50% + -5.68065em) calc(50% + 8.22984em), calc(50% + -7.48511em) calc(50% + 6.63123em), calc(50% + -8.85456em) calc(50% + 4.64723em), calc(50% + -9.70942em) calc(50% + 2.39316em), calc(50% + -10em) calc(50% + 0.0em), calc(50% + -9.70942em) calc(50% + -2.39316em), calc(50% + -8.85456em) calc(50% + -4.64723em), calc(50% + -7.48511em) calc(50% + -6.63123em), calc(50% + -5.68065em) calc(50% + -8.22984em), calc(50% + -3.54605em) calc(50% + -9.35016em), calc(50% + -1.20537em) calc(50% + -9.92709em), calc(50% + 1.20537em) calc(50% + -9.92709em), calc(50% + 3.54605em) calc(50% + -9.35016em), calc(50% + 5.68065em) calc(50% + -8.22984em), calc(50% + 7.48511em) calc(50% + -6.63123em), calc(50% + 8.85456em) calc(50% + -4.64723em), calc(50% + 9.70942em) calc(50% + -2.39316em));
+    clip-path: polygon(calc(50% + 10em) calc(50% + 0em), calc(50% + 9.70942em) calc(50% + 2.39316em), calc(50% + 8.85456em) calc(50% + 4.64723em), calc(50% + 7.48511em) calc(50% + 6.63123em), calc(50% + 5.68065em) calc(50% + 8.22984em), calc(50% + 3.54605em) calc(50% + 9.35016em), calc(50% + 1.20537em) calc(50% + 9.92709em), calc(50% + -1.20537em) calc(50% + 9.92709em), calc(50% + -3.54605em) calc(50% + 9.35016em), calc(50% + -5.68065em) calc(50% + 8.22984em), calc(50% + -7.48511em) calc(50% + 6.63123em), calc(50% + -8.85456em) calc(50% + 4.64723em), calc(50% + -9.70942em) calc(50% + 2.39316em), calc(50% + -10em) calc(50% + 0.0em), calc(50% + -9.70942em) calc(50% + -2.39316em), calc(50% + -8.85456em) calc(50% + -4.64723em), calc(50% + -7.48511em) calc(50% + -6.63123em), calc(50% + -5.68065em) calc(50% + -8.22984em), calc(50% + -3.54605em) calc(50% + -9.35016em), calc(50% + -1.20537em) calc(50% + -9.92709em), calc(50% + 1.20537em) calc(50% + -9.92709em), calc(50% + 3.54605em) calc(50% + -9.35016em), calc(50% + 5.68065em) calc(50% + -8.22984em), calc(50% + 7.48511em) calc(50% + -6.63123em), calc(50% + 8.85456em) calc(50% + -4.64723em), calc(50% + 9.70942em) calc(50% + -2.39316em));
+  }
+  80% {
+    opacity: .999;
+    -webkit-clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0);
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0);
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 100%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+}
